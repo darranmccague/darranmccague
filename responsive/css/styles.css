@@ -1,0 +1,303 @@
+/****************************
+*Author: Darran McCague
+*Assignment: WE3.0 PHP Web App Assignment, Digital Skills Academy
+*Student ID: D14126248
+*Date:18/12/14
+*Ref:website link to code referenced or the book, authors name and page number  
+http://www.w3schools.com/css/css_float.asp - image floats 
+http://teamtreehouse.com - Have a membership, css code from my own workspaces to style up the submit button and round numbers,
+http://css-tricks.com/ - looking up code none used 
+http://learnlayout.com/percent.html - looked at floats etc
+http://learning.digitalskillsacademy.com/pluginfile.php/1139/mod_scorm/content/5/index_lms.html - this was to learn about making the site responsive, nice little workshop!
+*****************************/
+
+
+/****************************
+GENERAL
+*****************************/
+
+body { 
+    font-family: 'Nunito', sans-serif; 
+    color: #384047; 
+    background-color: #F4F7F8;
+}
+
+header {
+    padding: 10px 0 0 0;
+    width: 100%;
+    background-color: #F0F2F2;
+    margin: 0;
+}
+
+header h1{ 
+    font-family: 'Nunito', sans-serif; 
+    padding: 10px 0 0 40px;
+    margin: 0; line-height: 0.8em;}
+
+header h2{ 
+    font-family: 'Nunito', sans-serif; 
+    padding: 0 0 0 40px;
+    margin: 0;}
+
+nav{
+    text-align:right;
+    padding: 10px 0 10px 0;
+    margin: 20px 0 20px 0;
+    background-color: #E3E7E8;
+    border-bottom: 1px solid #cccccc;}
+
+ul li{ 
+    font-size: 12px;
+    text-align: left;
+}
+
+
+section {
+    float: right;
+    margin: 1%; /* 10px divide by 940px = 1.46877*/
+    width: 66%; /* 640px divide by 940px = 1.46877*/
+    min-height: 300px;
+    padding: 2%;
+    background-color: #edf1f2;
+    border-radius: 5px;
+    }
+
+
+
+article{
+
+    margin: 1%; /* 10px divide by 940px = 1.46877*/
+    width: 100%;/* 300px divide by 940px = 0.31914*/
+    background-color: #edf1f2;
+    border-radius: 5px;
+    min-height: 300px;
+    }
+
+aside{
+    float: left;
+    margin: 1%; /* 10px divide by 940px = 1.46877*/
+    width: 23%;/* 300px divide by 940px = 0.31914*/
+    min-height: 300px;
+    padding: 1%;/* 10px divide by 940px = 1.46877*/
+    background-color: #edf1f2;
+    border-radius: 5px;
+    }
+
+
+footer {
+    border-top: 1px solid #cccccc;
+    padding: 10px;
+    color: #cccccc;
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+figure{ 
+    margin: 0 0 20px 0;
+    padding: 0;}
+
+h1 { 
+    font-family: 'Nunito', sans-serif; font-size:24px; 
+    font-variant:normal; 
+    font-weight:800; 
+    line-height:20px; 
+    color:#384047}
+
+h2{ font-size:18px; 
+    font-family: 'Nunito', sans-serif; 
+    font-variant:normal; 
+    font-weight:800; 
+    line-height:20px; 
+    color: #4bc970;}
+
+p { font-size:16px; 
+    font-family: 'Nunito', sans-serif;
+    font-variant:normal; 
+    line-height:20px; 
+    
+}
+
+a { color: #4bc970; 
+    font-size:18px;
+    text-decoration: none;
+    padding: 8px;  
+}
+a:hover{
+    text-decoration: none; 
+    color:#333333; }
+
+
+.active{
+    text-decoration: none; 
+    color:#333333;}
+
+
+/****************************
+LAYOUT
+*****************************/
+
+.wrapper{ max-width: 940px; overflow: auto; margin: 0 auto;}
+
+.logo { 
+    display: block; 
+    float: left;
+    clear: both;
+    padding: 0 20px 20px 20px;}
+
+
+#login{
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 400px;
+    background-color: #edf1f2;
+    border-radius: 5px;
+
+}
+
+#mydesign{
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2%;
+}
+
+#mydesign ul li{ 
+    font-size: 16px;
+    text-align: left;
+}
+
+
+
+#login h1{ text-align: center;}
+
+.imgfloat{
+    float: left;
+    margin: 5px;
+    width: 280px;
+    height:179px;
+
+}
+
+div.leftside_image {
+padding: 10px;
+margin: 10px 10px 40px 10px;
+font-size: 0.8em;
+clear: both;
+display: inline-block;
+width: 280px;
+height:179px;
+clear: both;
+
+}
+
+/****************************
+ELEMENTS
+*****************************/
+
+.profile-photo { 
+    display: block; 
+    max-width: 150px; 
+    border-radius: 100%;
+    margin: 0 auto;}
+
+
+
+.contact-info{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.contact-info a{
+  display:block;
+  min-height: 20px;
+  background-repeat:no-repeat;
+  background-size: 20px 20px;
+  padding: 0 0 0 30px;
+  margin: 0 0  10px;
+  font-size: 1.25em;
+}
+
+.contact-info li.phone a {
+    background-image:url('../assets/imgs/phone.png');
+}
+
+.contact-info li.mail a {
+  background-image:url('../assets/imgs/mail.png')
+}
+
+.contact-info li.facebook a {
+  background-image:url('../assets/imgs/facebook.png');
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 100%;
+}
+
+/****************************
+LOGIN FORM
+*****************************/
+
+button {
+    padding: 19px 39px 18px 39px;
+    color: #FFF;
+    background-color: #4bc970;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #3ac162;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 30px; 
+    max-width: 450px; 
+    clear: both; 
+    padding: 25px;
+    border: 1px solid #cccccc;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input{ width: 90%;
+    padding: 10px;
+}
+
+/****************************
+MEDIA QUERIE
+*****************************/
+
+@media all and (max-width:340px) {
+section, aside { 
+  float: none;
+  width:auto;}
+
+
+.leftside_image img{width: 80%; height: 80%;}
+section img{width: 80%; height: 80%;}
+
+nav a { display: inherit; text-align: center;
+}
+
+    }

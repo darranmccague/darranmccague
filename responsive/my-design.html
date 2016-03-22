@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--*Author: Darran McCague
+            *Assignment: WE3.0 PHP Web App Assignment, Digital Skills Academy
+            *Student ID: D14126248
+            *Date:18/12/14
+            *Ref:website link to code referenced or the book, authors name and page number  
+                http://www.w3schools.com/css/css_float.asp - image floats 
+                http://teamtreehouse.com - Have a membership, css code from my own workspaces to style up the submit button and round numbers,
+                http://css-tricks.com/ - looking up code none used 
+                http://learnlayout.com/percent.html - looked at floats etc
+                http://learning.digitalskillsacademy.com/pluginfile.php/1139/mod_scorm/content/5/index_lms.html - this was to learn about making the site responsive, nice little workshop!
+        -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>DMCC Designs - UI UX Web designer - My Design</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>      
+        
+    </head>
+    <body>
+        <header>
+            <img src="assets/imgs/logo.png" alt="logo" class="logo" height="104" width="104"/>
+        
+            <h1>DMCC <small>DESIGNS</small></h1>
+            
+            <h2>UI UX Web designer</h2>
+          
+                <nav>
+                <a href="login.html">Login</a>
+                <a href="my-profile.html">My Profile</a>
+                <a href="my-design.html" class="active">My Design</a>
+                </nav>
+        </header>
+        <div id="wrapper">
+
+                   
+                <article id="mydesign">
+                    <h1>My Design</h1>
+
+                    <h2>My Design and Build process</h2>
+
+                    <p>My design from the unset was going to be clean and simple, with a very limited colour plate and simple use of typography to guide you through the pages. I first started to plan my design by sketching up layouts of wireframes and placing the elements on the page using a pen and layout pad image 1. Once I was happy with the layout on paper I moved onto building out the layout using HTML 5 and CSS in Sublime Text 2 image 2. Image 3 shows my progression from design to build and image 4 shows a screen shot of the finished design.</p>
+
+                    <div class="leftside_image">
+                    <img src="assets/imgs/drawings.jpg" alt="drawings" height="199" width="300"/>
+                    <p><span class="number">1</span>Sketching up a layout</p>
+                    </div>
+
+                    <div class="leftside_image">
+                    <img src="assets/imgs/code.jpg" alt="code" height="199" width="300"/>
+                    <p><span class="number">2</span>Coding up in Sumline Text 2</p>
+                    </div>
+
+                    <div class="leftside_image">
+                    <img src="assets/imgs/website.jpg" alt="website" height="199" width="300"/>
+                    <p><span class="number">3</span>Website build in progress</p>
+                    </div>
+
+                    <div class="leftside_image">
+                    <img src="assets/imgs/website3.jpg" alt="website" height="199" width="300"/>
+                    <p><span class="number">4</span>Finished Website</p>
+                    </div>
+
+
+                    <h2>The Header</h2>
+                    <p>Holds the logo to the left and a tagline to the right of the logo. The main site navigation sits below the logo and tagline in a slightly darker grey just so that it stands out more and to make sure people know that’s the main navigation. Once the user is on a page the dark grey colour is used to indicate that this is the page that you are on, it acts like an active link.</p>
+
+
+                    <h2>The Login Page</h2>
+                    <p>The page opens with a welcome note at the top of the login box. The user is asked to login with a nice “Please Login” pointer with a number 1 in a green circle given the user a helpful tip along the way. The login box uses a darker shade of grey to left it away from the background colour. The login itself is again laid out simple with the use of labels to tell the user what information to plug in to processed, the login button is nice and big and fills must of the space in the fieldset, and works well given the user a big push in the right direction.</p>
+
+                    <h2>My Profile Page</h2>
+                    <p>This page uses a 2-column layout, on the left side of the page there is useful information about myself, like my email address and phone etc, also my username and last logged time.
+                    On the left hand side is some information about myself with an image of my favorite website.
+
+                    <h2>My Design Page</h2>
+                    <p>This page uses a wider container, as it is only a 1-column layout it shows information about the design and the step about how I designed and build the site.</p>
+
+                    
+                    <h2>Font Family</h2>
+                    <p>I have used Nunito a lovely soft rounded sans-serif typeface I have used this font for all my headings and body text. I have linked this in the head from Google fonts.
+                    I have used a nice line-height: 0.8em; this works well even when it scales down.</p><br>
+
+                    <ul>
+                        <li>Colour: background-color: #F4F7F8;</li>
+                        <li>Main Font color: #384047;</li>
+                        <li>H1 Font colour: #384047;</li>
+                        <li>H2 Font colour: #4bc970;</li>
+                        <li>Nav: background-color: #E3E7E8;</li>
+                        <li>Links: #4bc970;</li>
+                        <li>Link hover: #333333;</li>
+                    </ul>
+
+                    <h2>The Footer</h2>
+                    <p>A simple border top is used to divide the space with a simple © name and DSA course name.</p>
+
+                    <h2>Responsive Site</h2>
+                    <p>I have used a media quire once the browser window goes to 340px it places the profile box on top of the my profile information. I have also made the images scalable I have set them up to be 80% of the space they contain once the window is at 340px.</p>
+
+
+
+
+
+
+                </article>
+        </div>
+        <footer><p>&copy;<strong> Darran McCague</strong> HTML5 Design Technologies:</p></footer>
+    </body>
+</html>

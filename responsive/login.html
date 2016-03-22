@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--*Author: Darran McCague
+            *Assignment: WE3.0 PHP Web App Assignment, Digital Skills Academy
+            *Student ID: D14126248
+            *Date:18/12/14
+            *Ref:website link to code referenced or the book, authors name and page number  
+                http://www.w3schools.com/css/css_float.asp - image floats 
+                http://teamtreehouse.com - Have a membership, css code from my own workspaces to style up the submit button and round numbers,
+                http://css-tricks.com/ - looking up code none used 
+                http://learnlayout.com/percent.html - looked at floats etc
+                http://learning.digitalskillsacademy.com/pluginfile.php/1139/mod_scorm/content/5/index_lms.html - this was to learn about making the site responsive, nice little workshop!
+        -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" >
+        <title>DMCC Designs - UI UX Web designer - Login</title>
+        <link href="css/styles.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        
+    </head>
+    <body>
+        <header>
+            <img src="assets/imgs/logo.png" alt="logo" class="logo" height="104" width="104"/>
+        
+            <h1>DMCC <small>DESIGNS</small></h1>
+            
+            <h2>UI UX Web designer</h2>
+          
+                <nav>
+                <a href="login.html" class="active">Login</a>
+                <a href="my-profile.html">My Profile</a>
+                <a href="my-design.html">My Design</a>
+                </nav>
+        </header>
+        <div id="wrapper">
+
+                <div id="login">
+
+                <h1>Welcome To My Website</h1>
+
+                    <form name="contact" method="post" action="/">
+                        <fieldset>
+                            <legend><span class="number">1</span>Please Login</legend>
+
+                            <p><label for="username">User Name:</label>
+                                <input type="text" id="username" name="username" required placeholder="First Name"/></p>
+
+                            
+
+                                <p><label for="password">Password:</label>
+                                <input type="password" id="password" name="user_password" required placeholder="Password"></p>
+
+                                <button type="submit">Login</button>
+                        </fieldset>
+                    </form> 
+
+                </div>
+
+        </div>
+        <footer><p>&copy;<strong> Darran McCague</strong> HTML5 Design Technologies:</p></footer>
+    </body>
+</html>
